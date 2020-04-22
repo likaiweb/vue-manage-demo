@@ -1,0 +1,73 @@
+// 清除浮动
+.clearfix:before,
+.clearfix:after {
+    /*清楚浮动*/
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*单行溢出*/
+.txt_cut_1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*多行溢出 手机端使用*/
+.txt_cut_2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+// flex
+.flex {
+    display: flex;
+}
+.justify {
+    justify-content: center;
+}
+.align {
+    align-items: center;
+}
+.column {
+    flex-direction: column;
+}
+.between{
+    justify-content: space-between;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+
+// 路由动态
+.move-enter-active,
+.move-leave-active {
+    transition: opacity 0.5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+// 长按钮
+.long_btn{
+    padding: 6px 30px;
+}
+
+
+// elementUI
+.v-modal {
+    background: rgba(45, 58, 93, 0.14);
+}
