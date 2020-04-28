@@ -2,9 +2,9 @@
  * @Date: 2019-12-26 11:52:56
  * @Author: 李凯
  * @LastEditors: 李凯
- * @LastEditTime: 2020-04-22 14:28:49
+ * @LastEditTime: 2020-04-28 15:14:31
  * @Description: 开发环境参数配置
- * @FilePath: /H5MerchantCMS/src/libs/config.js
+ * @FilePath: /H5SalesCMS/src/libs/config.js
  */
 const config={
     // 生产环境
@@ -21,7 +21,7 @@ const config={
     },
     // 开发环境
     development: {
-        baseURL: 'https://api.eqimei.cn/mradmin'
+        baseURL: 'https://beta.api.nanguache.com/mradmin'
     },
 }
 export default process.env.NODE_ENV == 'production' ? 

@@ -1,5 +1,5 @@
 {
-  "name": "h5-merchant-cms",
+  "name": "h5-sales-cms",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "core-js": "^3.6.5",
     "echarts": "^4.7.0",
     "element-ui": "^2.13.1",
+    "js-md5": "^0.7.3",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "normalize.css": "^8.0.1",

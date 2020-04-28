@@ -2,9 +2,9 @@
  * @Date: 2019-12-25 16:06:20
  * @Author: 李凯
  * @LastEditors: 李凯
- * @LastEditTime: 2020-04-22 16:50:37
+ * @LastEditTime: 2020-04-28 14:14:56
  * @Description: 首页
- * @FilePath: /H5MerchantCMS/src/App.vue
+ * @FilePath: /H5SalesCMS/src/App.vue
  -->
 <template>
   <div id="app" :class="blurShow?'blur':''">

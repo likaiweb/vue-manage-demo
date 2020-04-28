@@ -2,9 +2,9 @@
  * @Date: 2019-12-26 11:15:04
  * @Author: 李凯
  * @LastEditors: 李凯
- * @LastEditTime: 2020-04-22 15:06:56
+ * @LastEditTime: 2020-04-28 15:53:42
  * @Description: ajax封装
- * @FilePath: /H5MerchantCMS/src/libs/ajax.js
+ * @FilePath: /H5SalesCMS/src/libs/ajax.js
  */
 import axios from 'axios'
 import envConfig from './config';
@@ -61,8 +61,8 @@ Axios.interceptors.request.use(config=>{
         requestName.indexOf("/api/pub/upImgsBase64") == -1&&
         requestName.indexOf("login") == -1
         ) {
-        if (sessionStorage['token']) {
-            config.headers["token"] = sessionStorage['token'];
+        if (sessionStorage['mr-token']) {
+            config.headers["mr-token"] = sessionStorage['mr-token'];
         }
     }
     return config;
@@ -78,7 +78,7 @@ Axios.interceptors.response.use(response=> {
     return response;
 }, error => {
     tryHideFullScreenLoading();
-    if (!window.sessionStorage.getItem("token")) {
+    if (!window.sessionStorage.getItem("mr-token")) {
         // 若是接口访问的时候没有发现有鉴权的基础信息,直接返回登录页
         router.push({
             path: "/login"
@@ -166,7 +166,7 @@ const $post = (url, params = {}) => {
         })
     })
 }
-export default {
+export {
     $get,
     $post
 }

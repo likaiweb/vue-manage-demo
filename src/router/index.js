@@ -2,9 +2,9 @@
  * @Date: 2019-12-25 16:11:49
  * @Author: 李凯
  * @LastEditors: 李凯
- * @LastEditTime: 2020-04-22 15:35:34
+ * @LastEditTime: 2020-04-28 15:52:56
  * @Description: 
- * @FilePath: /H5MerchantCMS/src/router/index.js
+ * @FilePath: /H5SalesCMS/src/router/index.js
  */
 import vue from 'vue'
 import Router from 'vue-router'
@@ -33,7 +33,7 @@ const router = new Router({
         meta: {
             title: '登录'
         },
-        component: () => import('@/views/login/index.vue')
+        component: () => import('@/views/other/login.vue')
     }, {
         path: "*",
         redirect: "/404"
@@ -43,7 +43,7 @@ const router = new Router({
 router.beforeEach((to, from, next) => {
     // to and from are both route objects. must call `next`.
     window.scrollTo(0, 0);
-    // const role = sessionStorage.getItem("token");
+    // const role = sessionStorage.getItem("mr-token");
     // if (!role && to.path !== "/login") {
     //     next("/login");
     // }else {
